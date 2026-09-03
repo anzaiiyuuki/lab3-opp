@@ -99,6 +99,10 @@ class Student
         }
         // TODO (Parte E): Destructor.
         // Imprime un mensaje indicando que el objeto dlzStudent con ese 'name' fue destruido.
+        ~Student()
+        {
+            cout<<" Student Destroyed:"<< name <<endl;
+        }
 };
 
 int main() {
@@ -111,7 +115,7 @@ int main() {
     s1.setGpa(56.0);
     s1.setId(1);
     s1.printInfo();
-
+    cout<<endl;
     // TODO (Parte C): Prueba setGpa() con un valor invalido (ej. 5.0)s
     // y confirma que el mensaje de error aparece y el gpa no cambia.
 
@@ -122,7 +126,6 @@ int main() {
     Student s2("Lilith",2,3.7);
     s2.setGpa(2.3);
     s2.printInfo();
-
-
+    
     return 0;
 }
