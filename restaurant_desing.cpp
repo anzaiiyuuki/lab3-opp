@@ -56,6 +56,7 @@ class Dish
                 cout<<"Error:no pueden haber precios de 0$";
             }
         }
+        
 // TODO (Parte G): Declara la clase Dish.
 //   - Miembros privados que necesita saber un plato (piensa en tu
 //     respuesta a la pregunta 1 de arriba).

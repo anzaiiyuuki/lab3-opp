@@ -22,6 +22,11 @@ class Rectangle
     double width;
     double height;
     public
+    Rectagle()
+    {
+        width=0;
+        heigth=0;
+    }
     
     void setWidth(double w)
     {
@@ -47,8 +52,7 @@ class Rectangle
     }
     double getArea()const
     {
-        width*heigth=area;
-        return area;
+        return width*heigth;
     }
 };
 // convirtiendo RectangleStruct a una class con encapsulacion real:
@@ -58,7 +62,8 @@ class Rectangle
 //   - getWidth() const y getHeight() const
 //   - getArea() const
 
-int main() {
+int main() 
+{
     // Esto compila hoy, sin ningun problema - y ese es el problema:
     RectangleStruct r;
     r.width = -5.0;    // no tiene sentido, pero nada lo impide
@@ -69,6 +74,8 @@ int main() {
     // width negativo con setWidth(), y confirma que NO se acepta
     // (el area calculada con datos validos previos, si los hubo,
     // deberia quedar intacta).
-
+    Rectangle r1;
+    r1.setWidth(-10);
+    r1.getHeight(10);
     return 0;
 }
