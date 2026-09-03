@@ -56,7 +56,7 @@ class Dish
                 cout<<"Error:no pueden haber precios de 0$";
             }
         }
-        
+
 // TODO (Parte G): Declara la clase Dish.
 //   - Miembros privados que necesita saber un plato (piensa en tu
 //     respuesta a la pregunta 1 de arriba).
@@ -64,7 +64,12 @@ class Dish
 //   - Getters para sus atributos.
 //   No hace falta implementar el cuerpo de cada funcion - un prototipo
 //   dentro de la clase es suficiente para este ejercicio.
+Dish::class Order
+{
+    private:
+    double total;
 
+}
 // TODO (Parte G): Declara la clase Order.
 //   - Como guarda la lista de platos (ver tu respuesta a la pregunta 2).
 //   - Necesita un metodo para calcular el total, incluyendo el 10%
